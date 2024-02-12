@@ -1,5 +1,7 @@
+import { Button } from "./atoms/Button";
+
 const App = () => {
-  return <h1>hello world</h1>;
+  return <Button>HELLO</Button>;
 };
 
 export default App;

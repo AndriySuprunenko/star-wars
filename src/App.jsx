@@ -1,7 +1,3 @@
-import { Button } from "./atoms/Button";
-
-const App = () => {
-  return <Button>HELLO</Button>;
-};
+const App = () => {};
 
 export default App;

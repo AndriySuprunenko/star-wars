@@ -2,22 +2,22 @@ import PropTypes from "prop-types";
 
 import { ButtonStyled } from "./Button.styled";
 
-const Button = ({ disabled, text, click }) => {
+const Button = ({ disabled, text, handleClick }) => {
   return (
-    <ButtonStyled onClick={click} disabled={disabled}>
+    <ButtonStyled onClick={handleClick} disabled={disabled}>
       {text}
     </ButtonStyled>
   );
 };
 
 Button.propTypes = {
-  click: PropTypes.func,
+  handleClick: PropTypes.func,
   disabled: PropTypes.bool,
   text: PropTypes.string,
 };
 
 Button.defaultProps = {
-  click: () => alert("Button"),
+  handleClick: () => {},
   disabled: false,
   text: "Default text",
 };

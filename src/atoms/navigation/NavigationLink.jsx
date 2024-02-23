@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 
+import { PATH } from '../../constants/path';
+
 const NavigationLink = () => {
   return (
     <Box
@@ -14,14 +16,14 @@ const NavigationLink = () => {
         },
       }}
     >
-      <Link href='/people' underline='always'>
-        {'People'}
+      <Link href={PATH.PEOPLE} underline='always'>
+        People
       </Link>
-      <Link href='/planets' underline='always'>
-        {'Planets'}
+      <Link href={PATH.PLANETS} underline='always'>
+        Planets
       </Link>
-      <Link href='/starships' underline='always'>
-        {'Starships'}
+      <Link href={PATH.STARSHIPS} underline='always'>
+        Starships
       </Link>
     </Box>
   );
